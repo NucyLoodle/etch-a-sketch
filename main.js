@@ -1,6 +1,6 @@
 window.onload = () => {
     function boxes(){
-        let container = document.getElementById('body');
+        let container = document.getElementById('container');
         let x = Math.floor(window.innerWidth/4); //width of boxes
         let y = Math.floor(window.innerHeight/4); //height of boxes
         for (let i = 0; i < x * y; i++) {//multiply x*y to get total area of boxes that can fit
