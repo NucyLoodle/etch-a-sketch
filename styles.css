@@ -9,8 +9,9 @@
 
 box {
     border: solid 1px black;
-    width: 24%;
-    padding-bottom: 24%; /* Same as width, sets height */
-    margin-bottom: 2%; /* (100-24*4)/2 */
+    width: 6%;
+    height: 6%;
+    padding-bottom: 6%; /* Same as width, sets height */
+    /*margin-bottom: 2%; /* (100-16*6)/2 */
     position: relative;
 }
