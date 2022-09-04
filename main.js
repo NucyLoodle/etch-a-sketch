@@ -1,16 +1,11 @@
-window.onload = () => {
-    function boxes(){
-        let container = document.getElementById('container');
-        let x = Math.floor(window.innerWidth/4); //width of boxes
-        let y = Math.floor(window.innerHeight/4); //height of boxes
-        for (let i = 0; i < x * y; i++) {//multiply x*y to get total area of boxes that can fit
-            let box = document.createElement('div');//create a div
-            box.className = 'box';//assign class
-            container.appendChild(box);//append
-    
-    }};
-    
-    window.addEventListener('load', function() {
-        boxes();
-    }); //loading webpage executes boxes function
+const container = document.querySelector('#container');
+
+for (i = 1; i <17; i++){
+    const box = document.createElement('box');
+    box.classList.add('box');
+    container.appendChild(box);
 }
+
+
+
+//div.classList.add('div');
