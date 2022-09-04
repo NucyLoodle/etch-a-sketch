@@ -1,17 +1,17 @@
 #container {
     display:flex;
-    justify-content: space-between;
     flex-wrap:wrap;
-
-
-
+    width: 40%; /*Resize container*/
+    
 }
 
 box {
     border: solid 1px black;
-    width: 6%;
+    width: 6%; /*Create square boxes*/
     height: 6%;
     padding-bottom: 6%; /* Same as width, sets height */
-    /*margin-bottom: 2%; /* (100-16*6)/2 */
     position: relative;
+    box-sizing: border-box;
 }
+
+/* to do: position container centrally*/
