@@ -8,4 +8,4 @@ for (i = 1; i <17; i++){
 
 
 
-//div.classList.add('div');
+

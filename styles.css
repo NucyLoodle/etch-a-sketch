@@ -1,0 +1,16 @@
+#container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+
+
+}
+
+box {
+    border: solid 1px black;
+    width: 24%;
+    padding-bottom: 24%; /* Same as width, sets height */
+    margin-bottom: 2%; /* (100-24*4)/2 */
+    position: relative;
+}
