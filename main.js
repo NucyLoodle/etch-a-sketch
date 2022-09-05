@@ -10,7 +10,7 @@ for (i = 1; i <257; i++){
     }); //Change colour of boxes on mouse hover
    
     
-} //Creates 16 boxes
+} //Creates boxes
 
 
 
