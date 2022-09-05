@@ -1,3 +1,21 @@
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header {
+    display:flex;
+    flex-direction:column;
+    padding: 1%;
+}
+
+#main {
+    display:flex;
+    justify-content: center;
+    border: solid 1px red;
+}
+
 #container {
     display:flex;
     flex-wrap:wrap;
@@ -14,4 +32,5 @@ box {
     box-sizing: border-box;
 }
 
-/* to do: position container centrally*/
+/* to do: container needs to remain the same, 
+size of boxes needs to change depending on number */
