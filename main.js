@@ -8,8 +8,8 @@ btn_popup.addEventListener("click", function() {
 
 
 function getSize() {
-    let userInput = parseInt.apply(prompt("Please enter the side length of the square.")); //Asks user to input a value
-   
+    let userInput = (prompt("Please enter the side length of the square.")); //Asks user to input a value
+    return userInput;
 } //Creates a prompt box
 
 
