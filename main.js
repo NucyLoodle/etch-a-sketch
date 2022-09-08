@@ -1,8 +1,18 @@
+createContainer(16); //Default size
+
+let btn_popup = document.querySelector("#btnQuestion");
+btn_popup.addEventListener("click", function() {
+    let size = getSize();
+    createContainer(size);
+}) //User can click button to enter a number
 
 
 function getSize() {
     let userInput = parseInt.apply(prompt("Please enter the side length of the square.")); //Asks user to input a value
-}
+   
+} //Creates a prompt box
+
+
 
 function createContainer(size) { //take any number and arrange as a grid
     
@@ -11,7 +21,7 @@ function createContainer(size) { //take any number and arrange as a grid
     container.style.gridTemplateRows = `repeat(${size},1fr`;
     let numBoxes = size * size;
 
-for (i = 1; i <numBoxes; i++){
+for (i = 1; i <=numBoxes; i++){
     const box = document.createElement('box');
     container.insertAdjacentElement("beforeend",box)
     
