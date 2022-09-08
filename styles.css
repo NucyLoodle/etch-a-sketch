@@ -2,6 +2,7 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 #header {
@@ -14,22 +15,22 @@ body {
     display:flex;
     justify-content: center;
     border: solid 1px red;
+   
 }
 
 #container {
-    display:flex;
-    flex-wrap:wrap;
-    width: 40%; /*Resize container*/
-    
+
+    width: 500px;
+    height: 500px;
+    display: grid;
+ 
+
 }
 
-box {
+box{
     border: solid 1px black;
-    width: 6%; /*Create square boxes*/
-    height: 6%;
-    padding-bottom: 6%; /* Same as width, sets height */
-    position: relative;
     box-sizing: border-box;
+    
 }
 
 button{
