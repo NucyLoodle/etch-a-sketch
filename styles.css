@@ -27,7 +27,7 @@ body {
 
 }
 
-box{
+#box{
     border: solid 1px black;
     box-sizing: border-box;
     
