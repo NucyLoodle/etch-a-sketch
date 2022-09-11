@@ -26,9 +26,16 @@ for (i = 1; i <=numBoxes; i++){
     container.insertAdjacentElement("beforeend", box)
     
     //container.appendChild(box); 
-    box.addEventListener("mouseover",function handleMouseOver(){
-    box.style.backgroundColor = "#C2EDCE";
-    }); //Change colour of boxes on mouse hover
+    //box.addEventListener("mouseover",function handleMouseOver(){
+    //box.style.backgroundColor = "#C2EDCE";
+    //}); //Change colour of boxes on mouse hover
+    box.addEventListener("mouseover", function randomColor() {
+        const randomR = Math.floor(Math.random() * 256);
+        const randomG = Math.floor(Math.random() * 256);
+        const randomB = Math.floor(Math.random() * 256);
+        box.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+    }); //Change colour of boxes randomly
+
 } //Creates boxes
 }
 
