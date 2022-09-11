@@ -13,9 +13,7 @@ body {
 
 #main {
     display:flex;
-    justify-content: center;
-    border: solid 1px red;
-   
+    justify-content: center; 
 }
 
 #container {
