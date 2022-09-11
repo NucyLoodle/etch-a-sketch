@@ -23,18 +23,11 @@ body {
     width: 500px;
     height: 500px;
     display: grid;
- 
 
 }
 
-#box{
-    border: solid 1px black;
-    box-sizing: border-box;
-    
-}
+
 
 button{
    align-self: start; /*Prevents button from stretching to width of header*/
 }
-/* to do: container needs to remain the same, 
-size of boxes needs to change depending on number */
