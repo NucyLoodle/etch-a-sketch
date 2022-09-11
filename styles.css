@@ -21,6 +21,7 @@ body {
     width: 500px;
     height: 500px;
     display: grid;
+    border: solid 1px #388087;
 
 }
 
