@@ -25,7 +25,7 @@ for (i = 1; i <=numBoxes; i++){
     const box = document.createElement('box');
     container.insertAdjacentElement("beforeend", box)
     
-    //container.appendChild(box); 
+
     //box.addEventListener("mouseover",function handleMouseOver(){
     //box.style.backgroundColor = "#C2EDCE";
     //}); //Change colour of boxes on mouse hover
@@ -39,6 +39,7 @@ for (i = 1; i <=numBoxes; i++){
 } //Creates boxes
 }
 
+//To do reset coloured boxes to white on button click
 
 
 
