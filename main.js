@@ -2,6 +2,7 @@ createContainer(16); //Default size
 
 let btn_popup = document.querySelector("#btnQuestion");
 btn_popup.addEventListener("click", function() {
+    resetColour()
     let size = getSize();
     createContainer(size);
 }) //User can click button to enter a number
@@ -24,7 +25,6 @@ function createContainer(size) { //take any number and arrange as a grid
 for (i = 1; i <=numBoxes; i++){
     const box = document.createElement('box');
     container.insertAdjacentElement("beforeend", box)
-    
 
     //box.addEventListener("mouseover",function handleMouseOver(){
     //box.style.backgroundColor = "#C2EDCE";
@@ -39,6 +39,10 @@ for (i = 1; i <=numBoxes; i++){
 } //Creates boxes
 }
 
+function resetColour(){
+    let allBoxes = document.querySelectorAll("box");
+    allBoxes.forEach((box) => box.style.backgroundColor = "white");
+}
 //To do reset coloured boxes to white on button click
 
 
