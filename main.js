@@ -42,6 +42,7 @@ for (i = 1; i <=numBoxes; i++){
     box.style.backgroundColor = "black";
     }); //Change colour of boxes on mouse hover
 } //Creates boxes
+resetColour();
 }
 
 function resetColour(){ 
@@ -61,8 +62,6 @@ function randomColour(){
     })     
     }); //Change colour of boxes randomly
 }
-
-
 
 function blackColour(){
     let allBoxes = document.querySelectorAll("box");
