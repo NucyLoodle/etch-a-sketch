@@ -12,7 +12,12 @@ let btnColour = document.querySelector("#colourChange");
 btnColour.addEventListener("click", function() {
     resetColour();
     randomColour();
+}) //User can change colours 
 
+let btnBlack = document.querySelector("#black");
+btnBlack.addEventListener("click", function() {
+    resetColour();
+    blackColour();
 }) //User can change colours 
 
 function getSize() {
@@ -34,7 +39,7 @@ for (i = 1; i <=numBoxes; i++){
     container.insertAdjacentElement("beforeend", box)
 
     box.addEventListener("mouseover",function handleMouseOver(){
-    box.style.backgroundColor = "#C2EDCE";
+    box.style.backgroundColor = "black";
     }); //Change colour of boxes on mouse hover
 } //Creates boxes
 }
@@ -55,8 +60,16 @@ function randomColour(){
             box.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
     })     
     }); //Change colour of boxes randomly
-
 }
 
 
+
+function blackColour(){
+    let allBoxes = document.querySelectorAll("box");
+    allBoxes.forEach((box) => {
+        box.addEventListener("mouseover", function handleMouseOver() {
+            box.style.backgroundColor = "black";
+    })     
+    }); //Change colour of boxes to black
+}
 
