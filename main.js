@@ -26,9 +26,19 @@ for (i = 1; i <=numBoxes; i++){
     const box = document.createElement('box');
     container.insertAdjacentElement("beforeend", box)
 
-    //box.addEventListener("mouseover",function handleMouseOver(){
-    //box.style.backgroundColor = "#C2EDCE";
-    //}); //Change colour of boxes on mouse hover
+    box.addEventListener("mouseover",function handleMouseOver(){
+    box.style.backgroundColor = "#C2EDCE";
+    }); //Change colour of boxes on mouse hover
+} //Creates boxes
+}
+
+function resetColour(){ 
+    let allBoxes = document.querySelectorAll("box");
+    allBoxes.forEach((box) => box.style.backgroundColor = "white");
+}; //Resets the colour of the boxes to white
+
+
+function randColour(){
     box.addEventListener("mouseover", function randomColor() {
         const randomR = Math.floor(Math.random() * 256);
         const randomG = Math.floor(Math.random() * 256);
@@ -36,14 +46,7 @@ for (i = 1; i <=numBoxes; i++){
         box.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
     }); //Change colour of boxes randomly
 
-} //Creates boxes
 }
-
-function resetColour(){
-    let allBoxes = document.querySelectorAll("box");
-    allBoxes.forEach((box) => box.style.backgroundColor = "white");
-}
-//To do reset coloured boxes to white on button click
 
 
 
