@@ -9,6 +9,7 @@ body {
     display:flex;
     flex-direction:column;
     padding: 1%;
+    align-items: center;
 }
 
 #main {
@@ -22,11 +23,12 @@ body {
     height: 500px;
     display: grid;
     border: solid 1px #388087;
+    
 
 }
 
 
 
 button{
-   align-self: start; /*Prevents button from stretching to width of header*/
+   align-self: center; /*Prevents button from stretching to width of header*/
 }
