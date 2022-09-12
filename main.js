@@ -1,5 +1,6 @@
 createContainer(16); //Default size
 
+
 let btn_popup = document.querySelector("#btnQuestion");
 btn_popup.addEventListener("click", function() {
     resetColour()
@@ -7,6 +8,12 @@ btn_popup.addEventListener("click", function() {
     createContainer(size);
 }) //User can click button to enter a number
 
+let btnColour = document.querySelector("#colourChange");
+btnColour.addEventListener("click", function() {
+    resetColour();
+    randomColour();
+
+}) //User can change colours 
 
 function getSize() {
     let userInput = (prompt("Please enter the side length of the square.")); //Asks user to input a value
@@ -34,16 +41,19 @@ for (i = 1; i <=numBoxes; i++){
 
 function resetColour(){ 
     let allBoxes = document.querySelectorAll("box");
-    allBoxes.forEach((box) => box.style.backgroundColor = "white");
+    allBoxes.forEach((box) => box.style.backgroundColor = "white")
 }; //Resets the colour of the boxes to white
 
 
-function randColour(){
-    box.addEventListener("mouseover", function randomColor() {
-        const randomR = Math.floor(Math.random() * 256);
-        const randomG = Math.floor(Math.random() * 256);
-        const randomB = Math.floor(Math.random() * 256);
-        box.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+function randomColour(){
+    let allBoxes = document.querySelectorAll("box");
+    allBoxes.forEach((box) => {
+        box.addEventListener("mouseover", function randomColour() {
+            const randomR = Math.floor(Math.random() * 256);
+            const randomG = Math.floor(Math.random() * 256);
+            const randomB = Math.floor(Math.random() * 256);
+            box.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+    })     
     }); //Change colour of boxes randomly
 
 }
