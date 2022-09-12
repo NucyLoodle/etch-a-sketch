@@ -5,7 +5,12 @@ let btn_popup = document.querySelector("#btnQuestion");
 btn_popup.addEventListener("click", function() {
     resetColour()
     let size = getSize();
-    createContainer(size);
+    if (size <100 && size >= 1) {
+        createContainer(size);
+    } else {
+        alert("Please choose a number between 1 and 100.")
+    }
+    
 }) //User can click button to enter a number
 
 let btnColour = document.querySelector("#colourChange");
@@ -19,6 +24,11 @@ btnBlack.addEventListener("click", function() {
     resetColour();
     blackColour();
 }) //User can change colours 
+
+let btnReset = document.querySelector("#reset");
+btnReset.addEventListener("click", function() {
+    resetColour();
+}) //User can reset grid but retain number of boxes
 
 function getSize() {
     let userInput = (prompt("Please enter the side length of the square.")); //Asks user to input a value
